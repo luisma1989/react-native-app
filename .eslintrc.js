@@ -1,4 +1,31 @@
 module.exports = {
   root: true,
   extends: '@react-native-community',
-};
+  rules: {
+    semi: ['error', 'never'],
+    'linebreak-style': 0,
+    'react/prop-types': 'off',
+    'object-curly-spacing': ['error', 'always'],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore',
+      },
+    ],
+    'react/forbid-prop-types': 'off',
+    'react/jsx-no-duplicate-props': ['error', { ignoreCase: false }],
+    'arrow-parens': ['error', 'always'],
+    'no-use-before-define': 'off',
+    'no-console': 'off',
+    'import/extensions': 'off',
+    'jsx-quotes': ['error', 'prefer-single'],
+    'import/no-unresolved': 'off',
+    'import/no-named-default': 'off',
+    'lines-between-class-members': ['error', 'always'],
+    'no-debugger': 'off',
+  },
+}
